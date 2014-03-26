@@ -1,0 +1,52 @@
+ztask(3)
+========
+
+NAME
+----
+ztask - framework to run various tasks in parallel
+
+SYNOPSIS
+--------
+----
+//  Create a new ztask
+ztask_t *
+    ztask_new (int id);
+
+//  Destroy the ztask
+void
+    ztask_destroy (ztask_t **self_p);
+
+//  Print contents of message to stdout
+void
+    ztask_dump (ztask_t *self);
+
+//  Self test of this class
+int
+    ztask_test (bool verbose);
+----
+
+DESCRIPTION
+-----------
+
+ztask - framework to run various tasks in parallel
+
+
+EXAMPLE
+-------
+.From ztask_test method
+----
+    //  Simple create/destroy test
+    ztask_t *self = ztask_new (0);
+    assert (self);
+    ztask_destroy (&self);
+
+    printf ("OK\n");
+    return 0;
+}
+
+
+----
+
+SEE ALSO
+--------
+linkztask:ztask[7]

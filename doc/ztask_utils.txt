@@ -1,0 +1,27 @@
+ztask_utils(3)
+==============
+
+NAME
+----
+ztask_utils - utils for ztask
+
+SYNOPSIS
+--------
+----
+----
+
+DESCRIPTION
+-----------
+
+ztask_utils - utils for ztask
+
+
+EXAMPLE
+-------
+.From ztask_utils_test method
+----
+----
+
+SEE ALSO
+--------
+linkztask:ztask[7]

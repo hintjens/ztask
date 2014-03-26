@@ -1,0 +1,4 @@
+<class name = "ztask_utils" signature = "1" title = "Utils for ztask">
+This is utils for ZTASK
+<include filename = "license.xml" />
+</class>

@@ -1,0 +1,4 @@
+<class name = "ztask_empty" signature = "1" title = "Empty title">
+This is empty title
+<include filename = "license.xml" />
+</class>

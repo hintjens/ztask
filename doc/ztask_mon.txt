@@ -1,0 +1,52 @@
+ztask_mon(3)
+============
+
+NAME
+----
+ztask_mon - system monitoring for ztask
+
+SYNOPSIS
+--------
+----
+//  Create a new ztask_mon
+ztask_mon_t *
+    ztask_mon_new (int id);
+
+//  Destroy the ztask_mon
+void
+    ztask_mon_destroy (ztask_mon_t **self_p);
+
+//  Print contents of message to stdout
+void
+    ztask_mon_dump (ztask_mon_t *self);
+
+//  Self test of this class
+int
+    ztask_mon_test (bool verbose);
+----
+
+DESCRIPTION
+-----------
+
+ztask_mon - system monitoring for ztask
+
+
+EXAMPLE
+-------
+.From ztask_mon_test method
+----
+    //  Simple create/destroy test
+    ztask_mon_t *self = ztask_mon_new (0);
+    assert (self);
+    ztask_mon_destroy (&self);
+
+    printf ("OK\n");
+    return 0;
+}
+
+
+----
+
+SEE ALSO
+--------
+linkztask:ztask[7]

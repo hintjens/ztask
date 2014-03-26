@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export PATH="/usr/local/bin:$PATH"
+
+# already done
+#gsl -q -script:empty_c ztask.xml
+#gsl -q -script:empty_c ztask_mon.xml
+#gsl -q -script:empty_c ztask_mon_proc.xml
+#gsl -q -script:empty_c ztask_utils.xml
+gsl -q -script:empty_c ztask_sim.xml
+
+# put your own 
+# example (WARNING this will overwite previously generated files)
+# gsl -q -script:empty_c ztask_empty.xml
+
+gsl -q -script:project.gsl project.xml

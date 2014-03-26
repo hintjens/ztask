@@ -1,0 +1,4 @@
+<class name = "ztask" signature = "1" title = "framework to run various tasks in parallel">
+This is framework to run various tasks in parallel
+<include filename = "license.xml" />
+</class>

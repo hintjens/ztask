@@ -1,0 +1,50 @@
+ztask_mon_proc(3)
+=================
+
+NAME
+----
+ztask_mon_proc - process monitoring for ztask
+
+SYNOPSIS
+--------
+----
+//  Create a new ztask_mon_proc
+ztask_mon_proc_t *
+    ztask_mon_proc_new (int id);
+
+//  Destroy the ztask_mon_proc
+void
+    ztask_mon_proc_destroy (ztask_mon_proc_t **self_p);
+
+//  Print contents of message to stdout
+void
+    ztask_mon_proc_dump (ztask_mon_proc_t *self);
+
+//  Self test of this class
+int
+    ztask_mon_proc_test (bool verbose);
+----
+
+DESCRIPTION
+-----------
+
+ztask_mon_proc - process monitoring for ztask
+
+
+EXAMPLE
+-------
+.From ztask_mon_proc_test method
+----
+    //  Simple create/destroy test
+    ztask_mon_proc_t *self = ztask_mon_proc_new (0);
+    assert (self);
+    ztask_mon_proc_destroy (&self);
+
+    printf ("OK\n");
+    return 0;
+}
+----
+
+SEE ALSO
+--------
+linkztask:ztask[7]

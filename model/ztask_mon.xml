@@ -1,0 +1,4 @@
+<class name = "ztask_mon" signature = "1" title = "System monitoring for ztask">
+This is system monitoring for ztask
+<include filename = "license.xml" />
+</class>

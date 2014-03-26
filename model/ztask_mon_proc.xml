@@ -1,0 +1,4 @@
+<class name = "ztask_mon_proc" signature = "1" title = "Process monitoring for ztask">
+This is process monitoring for ztask
+<include filename = "license.xml" />
+</class>
